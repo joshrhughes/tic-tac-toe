@@ -1,0 +1,45 @@
+/* Colors - #324851 -  x
+ #86AC41 - o
+ #34675c - base1
+ #7da3a1 - base2*/
+
+
+body{
+	text-align: center;
+}
+.cell {
+	background: #7da3a1;
+	border: 4px solid #34675c;
+	height: 100px;
+	width: 100px;
+	margin: 5px;
+	display: inline-block;
+	border-radius: 5px;
+}
+
+#row {
+	background: black;
+	height: 50px;
+	width: 50px;
+	margin: 5px;
+	display: block;
+}
+
+.jumbotron{
+	background-color: #34675c;
+	color: #7da3a1;
+	border: 4px solid #7da3a1 ;
+}
+
+#restart{
+	background: #34675c;
+	color:#7da3a1;
+	border: 2px solid #7da3a1 ;
+}
+
+
+/*Changed Cells*/
+.newcell{
+	background: #86AC41;
+}
+

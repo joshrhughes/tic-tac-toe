@@ -9,16 +9,10 @@
 
 $().ready(function(){
 	console.log("ready!");
-
-
-
 	//selet cell divs 
 	//probably need a for loop to alternate between x and o and can limit that to 9 clicks.
 	//For loop is not the answer
 	//when x clicks could toggel new class that has differnt colors
-	
-	// for (var i = 0; i < 9; i++) {
-		// turns[i];
 	var turnNum = 0;
 	console.log(turnNum);
 	$( ".cell" ).click(function() {
@@ -33,33 +27,17 @@ $().ready(function(){
 				return;
 			}
 			if(turnNum % 2 ===0){
-				
-			  		// $( this ).removeClass( "cell" ).addClass("newCell");
 			  		$( this ).toggleClass( "xcell" );
-			  		// // $(this).html( "<h2>X</h2>");	
-			  		// $( this ).attr( "class", "newCell" );
-			  		// $( this ).removeClass( "cell" );
-			  		// $( this ).removeClass( "cell" ).addClass("newCell");
-			  		console.log(this);
+			  		//console.log(this);
 			  		$(this).off("click");
-
-
 			}
 			else{
-				
-				  	// $( this ).removeClass( "cell" ).addClass("newCell");
 				  	$( this ).toggleClass( "ocell" );
-				  	// $(this).html( "<h2>O</h2>");
-				  	// $( this ).addClass( "newCell" );
-				  	// $( this ).removeClass( "cell" ).addClass("newCell");
-				  	console.log(this);
+				  	//console.log(this);
 				  	$(this).off("click");
+				  	
 			}	
-
 	});	
-	// console.log('we have left the building');
-
-
 	//Restart
 	$("#restart").click(function(){
 		window.location.reload();	

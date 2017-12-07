@@ -12,8 +12,9 @@
 
 body{
 	text-align: center;
-	background: #ffffff;
+	background: url(img.png);
 	font-family: 'Montserrat', sans-serif;
+	min-width: 990px;
 }
 
 #board{

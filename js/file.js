@@ -23,19 +23,37 @@ $().ready(function(){
 	console.log(turnNum);
 	$( ".cell" ).click(function() {
 
+		//try jquery event listern off *************
+
 		turnNum += 1;
 		console.log(turnNum);
 
 			// if ((turnNum % 2 === 0) && (turnNum < 9)) {
-			if(turnNum % 2 ==0){
+			if (turnNum > 9){
+				return;
+			}
+			if(turnNum % 2 ===0){
 				
+			  		// $( this ).removeClass( "cell" ).addClass("newCell");
 			  		$( this ).toggleClass( "xcell" );
-					
+			  		// // $(this).html( "<h2>X</h2>");	
+			  		// $( this ).attr( "class", "newCell" );
+			  		// $( this ).removeClass( "cell" );
+			  		// $( this ).removeClass( "cell" ).addClass("newCell");
+			  		console.log(this);
+			  		$(this).off("click");
+
+
 			}
 			else{
 				
+				  	// $( this ).removeClass( "cell" ).addClass("newCell");
 				  	$( this ).toggleClass( "ocell" );
-				
+				  	// $(this).html( "<h2>O</h2>");
+				  	// $( this ).addClass( "newCell" );
+				  	// $( this ).removeClass( "cell" ).addClass("newCell");
+				  	console.log(this);
+				  	$(this).off("click");
 			}	
 
 	});	

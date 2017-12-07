@@ -6,6 +6,7 @@
 
 body{
 	text-align: center;
+	background: rgba(125, 163, 161, 0.15);
 }
 .cell {
 	background: #7da3a1;
@@ -39,7 +40,10 @@ body{
 
 
 /*Changed Cells*/
-.newcell{
+.xcell{
 	background: #86AC41;
+}
+.ocell{
+	background: #324851;
 }
 

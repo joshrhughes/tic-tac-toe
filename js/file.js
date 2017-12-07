@@ -23,28 +23,27 @@ $().ready(function(){
 	console.log(turnNum);
 	$( ".cell" ).click(function() {
 
-		turnNum - 1;
+		turnNum += 1;
 		console.log(turnNum);
 
-			if ((turnNum % 2 === 0) && (turnNum < 9)) {
-
-				$( ".cell" ).click(function() {
+			// if ((turnNum % 2 === 0) && (turnNum < 9)) {
+			if(turnNum % 2 ==0){
+				
 			  		$( this ).toggleClass( "xcell" );
-					});
+					
 			}
 			else{
-				$( ".cell" ).click(function() {
-				  		$( this ).toggleClass( "ocell" );
-				});
+				
+				  	$( this ).toggleClass( "ocell" );
+				
 			}	
 
 	});	
 	// console.log('we have left the building');
 
 
-	//Clear Memory
+	//Restart
 	$("#restart").click(function(){
-		window.location.reload();
-			
+		window.location.reload();	
 		});
 });

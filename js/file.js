@@ -38,40 +38,12 @@ $().ready(function(){
 				  	
 			}
 			//Winning Logic for X
-			if(($('#1').hasClass('xcell')) && ($('#2').hasClass('xcell')) && ($('#3').hasClass('xcell'))) {
+			if((($('#1').hasClass('xcell')) && ($('#2').hasClass('xcell')) && ($('#3').hasClass('xcell'))) || (($('#4').hasClass('xcell')) && ($('#5').hasClass('xcell')) && ($('#6').hasClass('xcell'))) || (($('#7').hasClass('xcell')) && ($('#8').hasClass('xcell')) && ($('#9').hasClass('xcell'))) || (($('#1').hasClass('xcell')) && ($('#5').hasClass('xcell')) && ($('#9').hasClass('xcell'))) || (($('#3').hasClass('xcell')) && ($('#5').hasClass('xcell')) && ($('#7').hasClass('xcell')))  ||   (($('#1').hasClass('xcell')) && ($('#4').hasClass('xcell')) && ($('#7').hasClass('xcell'))) ||  (($('#2').hasClass('xcell')) && ($('#5').hasClass('xcell')) && ($('#8').hasClass('xcell')))  ||  (($('#3').hasClass('xcell')) && ($('6').hasClass('xcell')) && ($('#9').hasClass('xcell')))){
 				alert("X Wins!");  }
-			if(($('#4').hasClass('xcell')) && ($('#5').hasClass('xcell')) && ($('#6').hasClass('xcell'))) {
-				alert("X Wins!");  }
-			if(($('#7').hasClass('xcell')) && ($('#8').hasClass('xcell')) && ($('#9').hasClass('xcell'))) {
-				alert("X Wins!");  }
-			if(($('#1').hasClass('xcell')) && ($('#5').hasClass('xcell')) && ($('#9').hasClass('xcell'))) {
-				alert("X Wins!");  }	
-			if(($('#3').hasClass('xcell')) && ($('#5').hasClass('xcell')) && ($('#7').hasClass('xcell'))) {
-				alert("X Wins!");  }
-			if(($('#1').hasClass('xcell')) && ($('#4').hasClass('xcell')) && ($('#7').hasClass('xcell'))) {
-				alert("X Wins!");  }
-			if(($('#2').hasClass('xcell')) && ($('#5').hasClass('xcell')) && ($('#8').hasClass('xcell'))) {
-				alert("X Wins!");  }
-			if(($('#3').hasClass('xcell')) && ($('6').hasClass('xcell')) && ($('#9').hasClass('xcell'))) {
-				alert("X Wins!");  }
+	
 			//Winning Logic for O
-			if(($('#1').hasClass('ocell')) && ($('#2').hasClass('ocell')) && ($('#3').hasClass('ocell'))) {
+			if((($('#1').hasClass('ocell')) && ($('#2').hasClass('ocell')) && ($('#3').hasClass('ocell'))) || (($('#4').hasClass('ocell')) && ($('#5').hasClass('ocell')) && ($('#6').hasClass('ocell'))) || (($('#7').hasClass('ocell')) && ($('#8').hasClass('ocell')) && ($('#9').hasClass('ocell'))) || (($('#1').hasClass('ocell')) && ($('#5').hasClass('ocell')) && ($('#9').hasClass('ocell'))) || (($('#3').hasClass('ocell')) && ($('#5').hasClass('ocell')) && ($('#7').hasClass('ocell')))  ||   (($('#1').hasClass('ocell')) && ($('#4').hasClass('ocell')) && ($('#7').hasClass('ocell'))) ||  (($('#2').hasClass('ocell')) && ($('#5').hasClass('ocell')) && ($('#8').hasClass('ocell')))  ||  (($('#3').hasClass('ocell')) && ($('6').hasClass('ocell')) && ($('#9').hasClass('ocell')))){
 				alert("O Wins!");  }
-			if(($('#4').hasClass('ocell')) && ($('#5').hasClass('ocell')) && ($('#6').hasClass('ocell'))) {
-				alert("O Wins!");  }
-			if(($('#7').hasClass('ocell')) && ($('#8').hasClass('ocell')) && ($('#9').hasClass('ocell'))) {
-				alert("O Wins!");  }
-			if(($('#1').hasClass('ocell')) && ($('#5').hasClass('ocell')) && ($('#9').hasClass('ocell'))) {
-				alert("O Wins!");  }	
-			if(($('#3').hasClass('ocell')) && ($('#5').hasClass('ocell')) && ($('#7').hasClass('ocell'))) {
-				alert("O Wins!");  }
-			if(($('#1').hasClass('ocell')) && ($('#4').hasClass('ocell')) && ($('#7').hasClass('ocell'))) {
-				alert("O Wins!");  }
-			if(($('#2').hasClass('ocell')) && ($('#5').hasClass('ocell')) && ($('#8').hasClass('ocell'))) {
-				alert("O Wins!");  }
-			if(($('#3').hasClass('ocell')) && ($('6').hasClass('ocell')) && ($('#9').hasClass('ocell'))) {
-				alert("O Wins!");  }
-			
 	});	
 
 
